@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@600&family=Fraunces:ital,wght@0,700;0,900;1,900&family=Fredoka:wght@400;700&family=Hind+Madurai:wght@400;700&family=Indie+Flower&family=Inter&family=Lato:wght@700&family=Montserrat:ital,wght@0,300;1,100&family=Nanum+Gothic:wght@400;700&family=Open+Sans:wght@300;700&family=Oswald:wght@200&family=Philosopher:wght@400;700&family=Poppins:wght@100;400&family=Raleway:wght@500&family=Roboto+Condensed&family=Roboto:wght@300;400&family=Tektur:wght@600&family=Tilt+Prism&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Mulish', sans-serif;
+}
+.items{
+    list-style-type: none;
+    font-family: 'Mulish', sans-serif;
+    color: #1F1534;
+}
+
+.header__content p{
+    color: rgba(125, 121, 135, 1);
+}
+.header__btn button{
+    background-color: rgba(69, 143, 246, 1);
+}
+.card__wrapper p, .card__text{
+    color: #7D7987;
+    line-height: 28px;
+}
+.card__wrapper{
+    background-image: url("../images/backimg.png");
+    background-repeat: no-repeat;
+}
+.card__btn button, .about__content button{
+    border: 1px solid #458FF6;
+    color: #458FF6;
+    transition: 0.5s;
+}
+.card__btn button:hover, .about__content button:hover{
+    background-color: #458FF6;
+    box-shadow: 0 0 10px 4px rgba(0, 98, 255, 0.744);
+    letter-spacing: 1px;
+    transform: scale(1.1);
+
+    color: #fff;
+}
+.about__content p{
+    color: #7D7987;
+    line-height: 30px;
+}
+@media only screen and (max-width: 768px){
+    nav{
+        max-width: 730px;
+        margin: auto;
+    }
+    header{
+        max-width: 768px;
+        margin: auto;
+    }
+   header  .header__img{
+        max-width: 480px;
+        height: 480px;
+    }
+    .header__content{
+        
+        flex-direction: none;
+        text-align: center;
+        max-width: 400px;
+        margin: auto;
+        text-align: center;
+    }
+    .header__title{
+        max-width: 350px;
+
+    }
+    .header__content h2{
+        text-align: center;
+
+        margin: 0;
+        font-size: 36px;
+    }
+    .header__text{
+        max-width: 350px;
+
+    }
+    .header__content p{
+        text-align: center;
+
+        font-size: 16px;
+    }
+    .card__wrapper{
+        max-width: 760px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card__wrapper .card1{
+        max-width: 300px;
+        margin: 10px 0;
+    }
+    .card__text, .card__text p {
+        max-width: 370px;
+        font-size: 16px;
+    }
+    .card__wrapper{
+        background-image: none;
+    }
+    .card__container{
+        max-width: 750px;
+        margin: 25px auto;
+    }
+    .card__wrapper .card__container p{
+        font-size: 10px;
+        max-width: 240px;
+        /* text-align: center; */
+        margin: 0;
+        left: 0;
+        right: 0;
+    }
+
+}
+@media only screen and (max-width: 576px){
+    nav{
+        max-width: 500px;
+    }
+    nav .items{
+        display: none;
+    }
+    .item__none{
+        display: block;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    header .header__img{
+        max-width:500px;
+        margin: auto;
+    }
+    .about__wrapper{
+        max-width: 570px;
+        display: flex;
+        flex-direction: column;
+    }
+    .about__content{
+        text-align: center;
+        max-width: 450px;
+        margin: auto;
+    }
+    .about__wrapper .about__content h2{
+        text-align: center;
+    }
+    .about__wrapper .about__content p{
+        max-width: 400px    ;
+        font-size: 14px;
+        text-align: center;
+    }
+    .about__wrapper .about__content .line2{
+        display: none;
+    }
+    .about__wrapper img{
+        max-width: 400px;
+        margin: auto;
+    }
+    .about__wrapper .about__content h2{
+        font-size: 30px;
+        max-width: 300px;
+        text-align: center;
+    }
+}
